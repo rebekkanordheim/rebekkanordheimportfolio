@@ -1,15 +1,15 @@
 :root {
   --main-text: #FFFFFF;
-  --secondary-text: #385064;
+  --secondary-text: #167C80;
   --main-color: #000000;
   --main-color-light: #58728461;
-  --secondary-color: #6C9EB4;
 }
 
 body {
   background-color: var(--main-color);
   color: var(--main-text);
 }
+
 h1,
 h2,
 h3 {
@@ -17,6 +17,7 @@ h3 {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
 p,
 a {
   font-family: "Dosis", sans-serif;
@@ -47,6 +48,7 @@ a {
   padding: 5px;
   font-size: 28px;
 }
+
 @media (max-width: 790px) {
   .nav {
     flex-direction: column;
@@ -62,7 +64,7 @@ a {
   }
 
   .nav ul li {
-    flex: 1 1 50%; 
+    flex: 1 1 50%;
     text-align: center;
   }
 
@@ -101,7 +103,6 @@ a {
 .footer {
   background-color: var(--main-color);
   color: var(--main-text);
-  padding: 10px;
   text-align: left;
   position: fixed;
   bottom: 0;
@@ -110,4 +111,77 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 60px;
+}
+
+/* homepage cards */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative; /* Add position relative to the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  text-align: center;
+  width: 100%; /* Make the card width 100% of the parent container */
+  overflow: hidden; /* Hide overflow to ensure tint stays within card */
+}
+
+.card img {
+  height: auto;
+  max-height: 400px;
+  width: 100%; /* Make the image width 100% of the card */
+  object-fit: cover; /* Ensure the image covers the container proportionally */
+  display: block;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.243); /* Add a black tint with 40% opacity */
+  pointer-events: none; /* Ensure the tint does not interfere with other elements */
+}
+
+.card-content {
+  position: absolute; /* Position the content absolute to place it on top of the image */
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  z-index: 1; /* Ensure content is above the tint */
+  color: white; /* Ensure text is visible on the tinted background */
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.card button {
+  background-color: var(--secondary-text);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.card button:hover {
+  background-color: var(--main-text);
+  color: var();
 }

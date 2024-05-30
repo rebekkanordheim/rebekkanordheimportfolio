@@ -30,7 +30,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
-import Projects from './Components/Projects';
+import Projects from './Components/Projects/Projects';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
