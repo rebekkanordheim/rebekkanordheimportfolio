@@ -12,9 +12,9 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -46,9 +46,10 @@ body::after {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  text-align: center;
 }
 
 p,
@@ -56,6 +57,7 @@ a {
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-size: 20px;
 }
 
 .nav {
@@ -72,6 +74,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  padding-right: 20px;
 }
 
 .nav ul li a {
@@ -79,6 +82,7 @@ a {
   text-decoration: none;
   padding: 5px;
   font-size: 28px;
+  padding-left: 30px;
 }
 
 @media (max-width: 790px) {
@@ -119,6 +123,7 @@ a {
   background-color: var(--main-shade);
   color: var(--main-text);
   text-align: left;
+  padding-left: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -126,13 +131,15 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 60px;
+  font-size: 20px;
 }
 
-/* homepage cards */
+/* project cards */
 .projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 80px;
 }
 
 h1 {
@@ -144,22 +151,28 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
   text-align: center;
-  width: 100%;
+  width: 80%;
   max-width: 800px;
-  /* Ensure the card width does not exceed 800px */
-  padding: 20px;
+  /*   padding: 20px; */
   background: transparent;
-  /* Transparent background */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  /* Optional: Add a light border to make the card more visible */
+  border: 3px solid var(--main-shade);
+  border-radius: 10px;
   overflow: hidden;
 }
 
+/* #Holidaze {
+  background-image: url('./images/Holidaze 1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ */
 .card-content {
   position: relative;
   z-index: 1;
-  color: white;
+  color: var(--main-text);
   text-align: center;
+  padding: 20px 0;
 }
 
 .card h2 {
@@ -183,5 +196,20 @@ h1 {
 
 .card button:hover {
   background-color: var(--secondary-text);
-  color: var(--main-color);
+  color: var(--main-text);
+  transition: background-color 0.3s ease-in;
+}
+
+/* specific project */
+.specificprojectimage {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.projectinfo {
+  max-width: 800px;
+}
+.projectinfo p {
+  padding: 0 20px;
+  align-items: center;
 }

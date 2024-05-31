@@ -1,58 +1,3 @@
-/* import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import '../../App.css';
-import Holidaze from '../../images/Holidaze1.png';
-import eCom from '../../images/eCom1.png';
-import BidWave from '../../images/BidWave1.png';
-import '../../App.css';
-
-const Projects = () => {
-    return (
-        <div className="projects-container">
-            <Helmet>
-                <title>Rebekka Nordheim | Projects</title>
-            </Helmet>
-            <h1>Projects Page</h1>
-            <div className="card">
-                <Link to="/holidaze">
-                    <img src={Holidaze} alt="Holidaze" />
-                    <div className="card-content">
-                        <h2>Holidaze</h2>
-                        <Link to="/holidaze">
-                            <button>View Project</button>
-                        </Link>
-                    </div>
-                </Link>
-            </div>
-            <div className="card">
-                <Link to="/ecom">
-                    <img src={eCom} alt="eCom" />
-                    <div className="card-content">
-                        <h2>eCom</h2>
-                        <Link to="/ecom">
-                            <button>View Project</button>
-                        </Link>
-                    </div>
-                </Link>
-            </div>
-            <div className="card">
-                <Link to="/bidwave">
-                    <img src={BidWave} alt="Bidwave" />
-                    <div className="card-content">
-                        <h2>Bidwave</h2>
-                        <Link to="/bidwave">
-                            <button>View Project</button>
-                        </Link>
-                    </div>
-                </Link>
-            </div>
-        </div>
-    );
-};
-
-export default Projects;
- */
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -64,26 +9,26 @@ const Projects = () => {
             <Helmet>
                 <title>Rebekka Nordheim | Projects</title>
             </Helmet>
-            <h1>My current projects</h1>
+            <h1>My latest projects</h1>
             <div className="card">
-                <div className="card-content">
-                    <h2>Holidaze</h2>
+                <div className="card-content" id='Holidaze'>
+                    <h2>Project Exam 2 - <i>Holidaze</i></h2>
                     <Link to="/holidaze">
                         <button>View Project</button>
                     </Link>
                 </div>
             </div>
             <div className="card">
-                <div className="card-content">
-                    <h2>eCom</h2>
+                <div className="card-content" id='eCom'>
+                    <h2>JavaScript Frameworks - <i>eComstore</i> </h2>
                     <Link to="/ecom">
                         <button>View Project</button>
                     </Link>
                 </div>
             </div>
             <div className="card">
-                <div className="card-content">
-                    <h2>Bidwave</h2>
+                <div className="card-content" id='Bidwave'>
+                    <h2>Semester Project 2 - <i>Bidwave</i></h2>
                     <Link to="/bidwave">
                         <button>View Project</button>
                     </Link>
