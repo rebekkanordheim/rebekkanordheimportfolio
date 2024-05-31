@@ -1,211 +1,14 @@
-/* :root {
-  --main-text: #FFFFFF;
-  --secondary-text: #FF2998;
-  --main-color: #000000;
-  --main-color-light: #58728461;
-}
-
-body {
-  background-color: var(--main-color);
-  color: var(--secondary-text);
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw; 
-  overflow-x: hidden;
-}
-
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('./images/Background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.7;
-  z-index: -1; 
-}
-
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
-}
-
-h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-p, a {
-  font-family: "Dosis", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-}
-
-.nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav ul li a {
-  color: var(--main-text);
-  text-decoration: none;
-  padding: 5px;
-  font-size: 28px;
-}
-
-@media (max-width: 790px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav ul li {
-    flex: 1 1 50%;
-    text-align: center;
-  }
-
-  .nav ul li a {
-    padding: 5px;
-  }
-}
-
-.nav ul li a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.logo img {
-  max-width: 200px;
-  margin-left: auto;
-}
-
-.footer {
-  background-color: var(--main-color);
-  color: var(--main-text);
-  text-align: left;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.card {
-  position: relative;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.card img {
-  height: auto;
-  max-height: 400px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.243);
-  pointer-events: none;
-}
-
-.card-content {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  color: white;
-  text-align: center;
-}
-
-.card h2 {
-  font-size: 1.5em;
-  margin: 0 0 10px;
-}
-
-.card button {
-  background-color: var(--secondary-text);
-  border: none;
-  border-radius: 4px;
-  color: var(--main-color);
-  cursor: pointer;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  font-family: "Dosis", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-}
-
-.card button:hover {
-  background-color: var(--main-text);
-  color: var(--main-color);
-}
- */
 :root {
   --main-text: #FFFFFF;
-  --secondary-text: #ff299896;
+  --main-shade: rgba(255, 255, 255, 0.173);
+  --secondary-text: #ff00a6;
   --main-color: #000000;
   --main-color-light: #58728461;
 }
 
 body {
   background-color: var(--main-color);
-  color: var(--secondary-text);
+  color: var(--main-text);
   position: relative;
   margin: 0;
   padding: 0;
@@ -236,10 +39,8 @@ body::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  /* Add a black tint with 40% opacity */
+  background: var(--main-shade);
   z-index: -1;
-  /* Ensure the tint is behind all other elements but above the background image */
 }
 
 h1,
@@ -315,7 +116,7 @@ a {
 }
 
 .footer {
-  background-color: var(--main-color);
+  background-color: var(--main-shade);
   color: var(--main-text);
   text-align: left;
   position: fixed;
@@ -367,7 +168,7 @@ h1 {
 }
 
 .card button {
-  background-color: var(--secondary-text);
+  background-color: var(--main-text);
   border: none;
   border-radius: 4px;
   color: var(--main-color);
@@ -381,6 +182,6 @@ h1 {
 }
 
 .card button:hover {
-  background-color: var(--main-text);
+  background-color: var(--secondary-text);
   color: var(--main-color);
 }

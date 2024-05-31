@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import RNLogo from '../images/RNLogoTransparent.png';
+import Logo from '../images/FullLogoTransparent.png';
 
 const Header = () => {
     return (
@@ -10,7 +10,7 @@ const Header = () => {
             <nav className='nav'>
                 <div className="logo">
                     <Link to='/'>
-                        <img src={RNLogo} alt="Logo" />
+                        <img src={Logo} alt="Logo" />
                     </Link>
                 </div>
                 <div>
