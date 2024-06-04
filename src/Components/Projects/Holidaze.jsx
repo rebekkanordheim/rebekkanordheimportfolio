@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+/* import { Link } from 'react-router-dom'; */
 import '../../App.css';
-import HolidazeMockup1 from '../../images/MockupHolidaze.png';
-import HolidazeMockup2 from '../../images/Mockup3Holidaze.png';
+import HolidazeMockup1 from '../../images/MockupHolidaze1.png';
+import HolidazeMockup2 from '../../images/MockupHolidaze2.png';
 import HolidazeMockup3 from '../../images/iPhoneMockupHolidaze.png';
 import HolidazeSite from '../../images/HolidazeSite.png';
 
@@ -30,15 +30,19 @@ const HolidazeProject = () => {
                             <br></br>
                             <br></br>
                             There are two aspects to this brief: the customer-facing side of the website where users can book holidays at a venue, and an admin-facing side of the website where users can register and manage venues and bookings at those venues.</p>
-                            <div>
-                    </div>
+                        <div>
+                        </div>
                     </div>
                     <div className='projectimages-container'>
                         <img className='specificproject-site' src={HolidazeSite} alt="Holidaze Site" />
                     </div>
                     <div>
-                        <a href="https://github.com/your-holidaze-github-link">GitHub</a>
-                        <a href="https://www.netlify.com/your-holidaze-netlify-link">Netlify</a>
+                        <a href="https://github.com/rebekkanordheim/rnprojectexam2holidaze"
+                        target="_blank"
+                        rel="noreferrer">GitHub</a>
+                        <a href="https://rnprojectexam2holidaze.netlify.app"
+                        target="_blank"
+                        rel="noreferrer">Netlify</a>
                     </div>
                 </div>
             </div>
