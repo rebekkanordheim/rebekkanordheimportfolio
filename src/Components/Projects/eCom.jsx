@@ -13,8 +13,8 @@ const eCom = () => {
             <Helmet>
                 <title>Rebekka Nordheim | eCom Store</title>
             </Helmet>
-            <div className="specificcard">
-                <div className="specificcard-content" id='Holidaze'>
+            <div className="specific-card">
+                <div className="specific-card-content">
                     <h1>JavaScript Frameworks CA  - <i>eCom Store</i></h1>
                     <div className='projectimages-container'>
                         <img className='specificproject-mockup' src={MockupeCom1} alt="eCom Project" />
@@ -38,16 +38,17 @@ const eCom = () => {
                         <div>
                         </div>
                     </div>
-                    <div className='projectimages-container'>
-                        <img className='specificproject-site' src={EcomSite} alt="eCom Site" />
-                    </div>
                     <div>
+                        <h2>See them in live here</h2>
                         <a href="https://github.com/rebekkanordheim/ecomstore"
                             target="_blank"
                             rel="noreferrer">GitHub</a>
                         <a href="https://ecom-rebekkanordheim.netlify.app"
                             target="_blank"
                             rel="noreferrer">Netlify</a>
+                    </div>
+                    <div className='projectimages-container'>
+                        <img className='specificproject-site' src={EcomSite} alt="eCom Site" />
                     </div>
                 </div>
             </div>

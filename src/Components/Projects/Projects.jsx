@@ -11,7 +11,7 @@ const Projects = () => {
             </Helmet>
             <h1>My latest projects</h1>
             <div className="card">
-                <div className="card-content" id='Holidaze'>
+                <div className="card-content">
                     <h2>Project Exam 2 - <i>Holidaze</i></h2>
                     <Link to="/holidaze">
                         <button>View Project</button>

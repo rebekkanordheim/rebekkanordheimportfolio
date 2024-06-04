@@ -13,8 +13,8 @@ const BidWaveProject = () => {
             <Helmet>
                 <title>Rebekka Nordheim | BidWave</title>
             </Helmet>
-            <div className="specificcard">
-                <div className="specificcard-content" id='Holidaze'>
+            <div className="specific-card">
+                <div className="specific-card-content">
                     <h1>Semester Project 2  - <i>BidWave</i></h1>
                     <div className='projectimages-container'>
                         <img className='specificproject-mockup' src={MockupBidwave1} alt="BidWave Project" />
@@ -34,16 +34,17 @@ const BidWaveProject = () => {
                         <div>
                         </div>
                     </div>
+                    <div>
+                        <h2>See them in live here</h2>
+                        <a href="https://github.com/rebekkanordheim/semesterproject2"
+                            target="_blank"
+                            rel="noreferrer">GitHub</a>
+                        <a href="https://bidwave.netlify.app"
+                            target="_blank"
+                            rel="noreferrer">Netlify</a>
+                    </div>
                     <div className='projectimages-container'>
                         <img className='specificproject-site' src={BidWaveSite} alt="Bidwave Site" />
-                    </div>
-                    <div>
-                        <a href="https://github.com/rebekkanordheim/semesterproject2"
-                        target="_blank"
-                        rel="noreferrer">GitHub</a>
-                        <a href="https://bidwave.netlify.app"
-                        target="_blank"
-                        rel="noreferrer">Netlify</a>
                     </div>
                 </div>
             </div>
