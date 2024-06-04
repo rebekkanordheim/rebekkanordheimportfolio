@@ -24,12 +24,16 @@ const eCom = () => {
                     </div>
                     <div className='projectinfo'>
                         <h2>Goal</h2>
-                        <p>To take the skills learned over the past three semesters and create an auction website.</p>
+                        <p>To apply knowledge of React to build an eCom store.</p>
                         <h2>Brief</h2>
-                        <p>An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction.
+                        <p>Using a Noroff API for this project.
                             <br></br>
                             <br></br>
-                            When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
+                            You are tasked with build out the following pages for an eCom store:
+                            <li>Homepage</li>
+                            <li>Individual product page</li>
+                            <li>Cart page</li>
+                            <li>Checkout success page</li>
                         </p>
                         <div>
                         </div>
@@ -39,11 +43,11 @@ const eCom = () => {
                     </div>
                     <div>
                         <a href="https://github.com/rebekkanordheim/ecomstore"
-                        target="_blank"
-                        rel="noreferrer">GitHub</a>
+                            target="_blank"
+                            rel="noreferrer">GitHub</a>
                         <a href="https://ecom-rebekkanordheim.netlify.app"
-                        target="_blank"
-                        rel="noreferrer">Netlify</a>
+                            target="_blank"
+                            rel="noreferrer">Netlify</a>
                     </div>
                 </div>
             </div>
