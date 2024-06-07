@@ -119,6 +119,14 @@ a {
   margin-left: auto;
 }
 
+.portrait {
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
+  border-radius: 5px;
+}
+
 .footer {
   background-color: var(--main-shade);
   color: var(--main-text);
@@ -236,9 +244,11 @@ h1 {
   border-radius: 5px;
   max-width: 90%;
 }
+
 .specific-card {
   padding: 20px;
 }
+
 .projectimages-container {
   display: flex;
   justify-content: space-between;
@@ -316,3 +326,9 @@ h1 {
   background-color: var(--main-color); 
   color: #FFFFFF;
 } */
+
+.icon-black {
+  color: var(--main-text);
+  font-size: 32px;
+  padding: 20px;
+}
