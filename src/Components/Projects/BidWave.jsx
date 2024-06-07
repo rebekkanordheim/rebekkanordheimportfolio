@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-/* import { Link } from 'react-router-dom'; */
 import '../../App.css';
 import MockupBidwave1 from '../../images/MockupBidwave1.png';
 import MockupBidwave2 from '../../images/MockupBidwave2.png';
