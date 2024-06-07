@@ -32,15 +32,10 @@ const HolidazeProject = () => {
                             <div>
                                 <h2>See them in live here</h2>
                                 <div className='project-link'>
-                                    <a href="https://github.com/rebekkanordheim/rnprojectexam2holidaze"
-                                        target="_blank"
-                                        rel="noreferrer">GitHub</a>
-                                    <a href="https://rnprojectexam2holidaze.netlify.app"
-                                        target="_blank"
-                                        rel="noreferrer">Netlify</a>
+                                    <a className="button" href="https://github.com/rebekkanordheim/rnprojectexam2holidaze" target="_blank" rel="noreferrer">GitHub</a>
+                                    <a className="button" href="https://rnprojectexam2holidaze.netlify.app" target="_blank" rel="noreferrer">Netlify</a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div className='projectimages-container'>

@@ -31,17 +31,13 @@ const BidWaveProject = () => {
                             <br></br>
                             When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
                         </p>
-                        <div>
-                        </div>
                     </div>
                     <div>
                         <h2>See them in live here</h2>
-                        <a href="https://github.com/rebekkanordheim/semesterproject2"
-                            target="_blank"
-                            rel="noreferrer">GitHub</a>
-                        <a href="https://bidwave.netlify.app"
-                            target="_blank"
-                            rel="noreferrer">Netlify</a>
+                        <div className='project-link'>
+                            <a className="button" href="https://github.com/rebekkanordheim/semesterproject2" target="_blank" rel="noreferrer">GitHub</a>
+                            <a className="button" href="https://bidwave.netlify.app" target="_blank" rel="noreferrer">Netlify</a>
+                        </div>
                     </div>
                     <div className='projectimages-container'>
                         <img className='specificproject-site' src={BidWaveSite} alt="Bidwave Site" />
