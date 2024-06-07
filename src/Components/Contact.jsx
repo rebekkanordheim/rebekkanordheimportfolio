@@ -13,9 +13,8 @@ const Contact = () => {
             <Helmet>
                 <title>Rebekka Nordheim | Contact</title>
             </Helmet>
-            <h1>Get in touch</h1>
+            <h1>Hello there!</h1>
             <div className='card'>
-                <h2>Hello there!</h2>
                 <p>My name is Rebekka Nordheim and I am a 25 y/o Front-End Developer. I'm based in Lørenskog and have currently finished my Higher Professional Degree in Front-End Development at Noroff School of Technology and Digital Media.
                     <br></br>
                     <br></br>
